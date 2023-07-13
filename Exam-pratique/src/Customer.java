@@ -1,16 +1,21 @@
 public class Customer {
     public String firstName;
     public String lastName;
-    private String codePostal;
+    private int codePostal;
     private String city;
 
     // constructeur
 
-    public Customer (String firstName, String lastName, String codePostal, String city){
+    public Customer (String firstName, String lastName, int codePostal, String city){
         this.firstName = firstName;
         this.lastName = lastName;
         this.codePostal = codePostal;
         this.city = city;
+    }
+
+    public String getInformation(){
+        return lastName;
+
     }
 
     // methode
@@ -31,7 +36,7 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public String getCodePostal(){
+    public int getCodePostal(){
         return codePostal;
     }
 

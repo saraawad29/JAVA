@@ -1,22 +1,19 @@
 public class Account {
 
-    private String reference;
+    private int reference;
 
     private double balance;
 
-
-
-
     // constructeur
 
-    public Account(String reference, double balance){
+    public Account(int reference, double balance){
         this.reference = reference;
-        this.balance = 0;
+        this.balance = balance;
     }
 
     // methode
 
-    public String getReference() {
+    public int getReference() {
         return reference;
     }
 
@@ -24,12 +21,14 @@ public class Account {
         return balance;
     }
 
-    public void deposit(double amount) {
+    public double setDeposit(double amount) {
         balance += amount;
+        return amount;
     }
 
-    public void withdraw(double amount) {
-        balance += amount;
+    public double setWithdraw(double test) {
+        balance = balance - test;
+        return test;
     }
 
 }
