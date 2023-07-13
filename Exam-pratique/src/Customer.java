@@ -1,4 +1,6 @@
 public class Customer {
+    public String createAccount;
+    public String login;
     public String firstName;
     public String lastName;
     private int codePostal;
@@ -12,13 +14,23 @@ public class Customer {
         this.codePostal = codePostal;
         this.city = city;
     }
-
-    public String getInformation(){
-        return lastName;
-
+    // methode
+    public void displayInfo() {
+        System.out.println("First Name: " + firstName);
+        System.out.println("Last Name: " + lastName);
+        System.out.println("Postal Code: " + codePostal);
+        System.out.println("City: " + city);
     }
 
-    // methode
+    public String setCreateAccount(){
+        this.createAccount = createAccount;
+        return createAccount;
+    }
+
+    public String setLogin(){
+        this.login = login;
+        return login;
+    }
 
     public String getFirstName(){
         return firstName;

@@ -26,9 +26,9 @@ public class Account {
         return amount;
     }
 
-    public double setWithdraw(double test) {
-        balance = balance - test;
-        return test;
+    public double setWithdraw(double amountW) {
+        balance = balance - amountW;
+        return amountW;
     }
 
 }
